@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@app/modules": ["./src/modules"],
+      "@app/modules/*": ["./src/modules/*"],
+      "@app/utils": ["./src/utils"],
+      "@app/utils/*": ["./src/utils/*"],
+      "@app/common": ["./src/common"],
+      "@app/common/*": ["./src/common/*"],
+      "@app/business": ["./src/business"],
+      "@app/business/*": ["./src/business/*"],
+      "@app/models": ["./src/models"],
+      "@app/models/*": ["./src/models/*"],
+      "@app/entities": ["./src/entities"],
+      "@app/entities/*": ["./src/entities/*"],
+      "@app/api": ["./src/api"],
+      "@app/api/*": ["./src/api/*"],
+      "@app/graphql": ["./src/graphql"],
+      "@app/graphql/*": ["./src/graphql/*"]
+    }
+  },
+  "exclude": ["./node_modules/", "./dist/"]
+}
